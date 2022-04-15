@@ -1,6 +1,10 @@
 # Docker_Data_Tool
 A Docker data tool that handles ingestion to display.
 
+This is a weekend project me and my friend worked on, with the goal of learning and utilizing Docker's capabilities.
+It utilizes Docker compose to provide networking between containers. There is a frontend container, a backend container, 
+and an nginx container for forwarding traffic among them. There is also a Python container that is focused on parsing data from a remote MySQL database.
+
 ## Available Scripts
 
 In the project directory, you can run:
