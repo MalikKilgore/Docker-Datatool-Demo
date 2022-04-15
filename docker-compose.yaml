@@ -1,0 +1,45 @@
+version: '3.8'
+services:
+  frontend:
+    restart: always
+    hostname: frontend
+    build: 
+      dockerfile: Dockerfile
+      context: .
+    # For docker-compose push
+    image: dltmalik/reactapp:latest
+    ports:
+      - 3000:3000
+    networks:
+      - frontend
+      - backend
+  backend:
+    restart: always
+    hostname: backend
+    build: 
+      dockerfile: Dockerfile
+      context: ./src/server
+    # For docker-compose push
+    image: dltmalik/nodesql:latest
+    ports:
+      - 3020:3020
+    networks:
+      - backend
+  nginx:
+    hostname: nginx
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./src/nginx
+    # For docker-compose push
+    image: dltmalik/revproxy:latest
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - frontend
+      - backend
+
+networks: 
+  frontend:
+  backend:

@@ -1,0 +1,7 @@
+version: "3.4"
+services:
+  python:
+    build:
+      context: .
+    container_name: python
+    image: ajkarella/python:1.0.0

@@ -1,0 +1,8 @@
+#This will make it so Docker ignores the backend Node.js Docker image and other unrelated folders
+/data
+/media
+/node_modules
+/pycharm_notebooks
+/python
+/src/server
+/npm-debug.log

@@ -1,0 +1,22 @@
+.Dashboard {
+  text-align: center;
+  height: 100%;
+}
+
+.Dash-body {
+  background-color: #282c34;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.bigNumContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-around;
+}
