@@ -5,6 +5,8 @@ This is a weekend project me and my friend worked on, with the goal of learning 
 It utilizes Docker compose to provide networking between containers. There is a frontend container, a backend container, 
 and an nginx container for forwarding traffic among them. There is also a Python container that is focused on parsing data from a remote MySQL database.
 
+<img src="https://raw.githubusercontent.com/MalikKilgore/Docker-Datatool-Demo/master/media/KubeDemo.png"></img>
+
 ## Available Scripts
 
 In the project directory, you can run:
